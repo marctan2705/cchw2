@@ -1,0 +1,25 @@
+Network Components
+Nodes: These include end-hosts (such as PCs and servers) and network devices like switches, routers, and middleboxes.
+Links: Connections between nodes, which can be coaxial cables, optical fibers, or wireless. Links can be point-to-point or shared among multiple nodes.
+Switching Methods
+Circuit Switching: Used in telephone networks, it establishes a dedicated communication link between two nodes. It's connection-oriented.
+Packet Switching: Common in computer networks, this method is connection-less and doesn't require a dedicated path. Data is divided into packets that are transferred independently over shared communication links.
+Addressing and Routing
+Addressing: Each node has a unique byte string identifier.
+Routing: The process of forwarding messages to the destination node based on its address. It can be unicast (to a specific node), broadcast (to all nodes), or multicast (to a group of nodes).
+Multiplexing
+Time-Division and Frequency Division: Techniques to consolidate multiple signals into one medium.
+Statistical Multiplexing: An on-demand method of time division, using buffers or queues to manage packets that contend for a link. Different scheduling methods can be applied, and congestion is indicated by buffer overflow.
+Performance Metrics
+Bandwidth and Throughput: The volume of data transmitted per unit of time.
+Latency: The total time it takes for data to travel from one end to another, including propagation, transmission, and queuing delays.
+Layering in Networks
+Layering allows the integration of various technologies within the same internet by separating functions into layers, each of which is a "black box" to the others. This enables interoperability through standardized interfaces.
+
+TCP/IP Protocols
+IP: A connectionless, packet-based protocol that provides best-effort delivery without guarantees regarding order, timing, or delivery of packets.
+TCP: Provides reliable data transfer over the inherently unreliable IP network by ensuring in-order byte stream, using mechanisms like connection establishment (handshaking), flow control, and congestion control.
+Network Topologies
+Clos Topologies: Use low-radix switches in multiple stages, offering path diversity and redundancy. They can scale to arbitrary sizes and facilitate regular upgrades.
+Fat Tree: A specific architecture that benefits from the advantages of Clos topologies, including substantial path diversity and the ability to meet arbitrary communication patterns without blocking.
+The information encompasses the basic principles of networking, focusing on how data is transmitted, routed, and managed across different network architectures, ensuring efficient and reliable communication.

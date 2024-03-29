@@ -1,0 +1,34 @@
+
+Virtualization is a technology that allows a single computer to function as multiple virtual machines (VMs), each running its own operating system and applications, by sharing the underlying physical hardware resources. This separation allows for higher efficiency and better resource utilization than traditional computing models, where each application might require its own physical server.
+
+Historical Context
+Traditionally, organizations would dedicate a single server to each application, leading to low utilization rates because the hardware resources would often be underused. Virtualization addresses this inefficiency by decoupling software from hardware, allowing multiple virtual environments to operate on a single physical system. This not only improves resource utilization but also allows for more flexible and dynamic resource management.
+
+Virtualization Architectures
+Hosted Architecture: Virtualization software runs on top of an operating system, treating it like any other application.
+Hypervisor Architecture: The virtualization layer, or hypervisor, is installed directly on the bare metal hardware. This provides direct access to hardware resources, resulting in greater efficiency, scalability, and robustness than hosted architectures.
+Operating System Concepts
+Key concepts include:
+
+Threads: A single, unique execution context within a process.
+Address Space with Translation: Programs operate in an address space that is translated from virtual to physical addresses, isolating them from the physical memory of the machine.
+Process: An instance of an executing program, consisting of one or more threads of control and an address space.
+Dual Mode Operation/Protection: Differentiates between system and user modes, protecting OS and hardware from user programs and isolating user programs from each other.
+Methods of Virtualization
+Full Virtualization: Uses software to emulate hardware and create a virtual machine that an unmodified guest OS can run on. The hypervisor intercepts and translates privileged operations while allowing non-privileged operations to run directly on the CPU.
+Paravirtualization: The guest OS is modified to interact with the hypervisor through an API, improving performance since less translation is required.
+Hardware-assisted Virtualization: Relies on hardware features to support virtualization, reducing the overhead of emulation and translation.
+Cloud Computing and Virtualization
+Cloud computing leverages virtualization to offer scalable and efficient computing resources. It enables elasticity, where resources can be dynamically adjusted to meet demand, making it both cost-effective and responsive.
+
+RAID (Redundant Array of Inexpensive Disks)
+RAID technology combines multiple physical disks into a single logical unit for improved performance and data redundancy.
+
+RAID 0 (Striping): Splits data across disks for better speed but offers no redundancy.
+RAID 1 (Mirroring): Duplicates data across disks, improving redundancy at the cost of usable disk space.
+RAID 5 (Striping with Parity): Distributes data and parity information across all disks, providing a balance of speed and redundancy.
+
+
+
+
+
